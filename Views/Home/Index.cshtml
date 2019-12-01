@@ -5,4 +5,12 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @if (System.IO.Directory.Exists("/test"))
+    {
+        <h1>The path /test exists!</h1>
+    }
+    else
+    {
+        <h1>The path /test does NOT exist.</h1>
+    }
 </div>
